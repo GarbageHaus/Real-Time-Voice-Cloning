@@ -1,5 +1,5 @@
 # Real-Time Voice Cloning
-This is a fork of [CorentinJ's amazing Voice Cloning repo]https://github.com/CorentinJ/Real-Time-Voice-Cloning
+This is a fork of [CorentinJ's amazing Voice Cloning repo](https://github.com/CorentinJ/Real-Time-Voice-Cloning)
 
 It is extremely encouraged that you visit that link instead of this one. This repo is mostly for my own edification. The goal of this repo is to have a stable, installable, and more slender version of this app. As such expect this to be frequently broken, or otherwise unhelpful to the vast majority reading this. Should this change, this paragraph will change.
 
