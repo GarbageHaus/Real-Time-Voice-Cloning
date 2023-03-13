@@ -1,40 +1,21 @@
 # Real-Time Voice Cloning
-This repository is an implementation of [Transfer Learning from Speaker Verification to
-Multispeaker Text-To-Speech Synthesis](https://arxiv.org/pdf/1806.04558.pdf) (SV2TTS) with a vocoder that works in real-time. This was my [master's thesis](https://matheo.uliege.be/handle/2268.2/6801).
+This is a fork of [CorentinJ's amazing Voice Cloning repo]https://github.com/CorentinJ/Real-Time-Voice-Cloning
 
-SV2TTS is a deep learning framework in three stages. In the first stage, one creates a digital representation of a voice from a few seconds of audio. In the second and third stages, this representation is used as reference to generate speech given arbitrary text.
-
-**Video demonstration** (click the picture):
-
-[![Toolbox demo](https://i.imgur.com/8lFUlgz.png)](https://www.youtube.com/watch?v=-O_hYhToKoA)
-
-
+It is extremely encouraged that you visit that link instead of this one. This repo is mostly for my own edification. The goal of this repo is to have a stable, installable, and more slender version of this app. As such expect this to be frequently broken, or otherwise unhelpful to the vast majority reading this. Should this change, this paragraph will change.
 
 ### Papers implemented  
 | URL | Designation | Title | Implementation source |
 | --- | ----------- | ----- | --------------------- |
-|[**1806.04558**](https://arxiv.org/pdf/1806.04558.pdf) | **SV2TTS** | **Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis** | This repo |
+|[**1806.04558**](https://arxiv.org/pdf/1806.04558.pdf) | **SV2TTS** | **Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis** | See Original Repo |
 |[1802.08435](https://arxiv.org/pdf/1802.08435.pdf) | WaveRNN (vocoder) | Efficient Neural Audio Synthesis | [fatchord/WaveRNN](https://github.com/fatchord/WaveRNN) |
 |[1703.10135](https://arxiv.org/pdf/1703.10135.pdf) | Tacotron (synthesizer) | Tacotron: Towards End-to-End Speech Synthesis | [fatchord/WaveRNN](https://github.com/fatchord/WaveRNN)
-|[1710.10467](https://arxiv.org/pdf/1710.10467.pdf) | GE2E (encoder)| Generalized End-To-End Loss for Speaker Verification | This repo |
+|[1710.10467](https://arxiv.org/pdf/1710.10467.pdf) | GE2E (encoder)| Generalized End-To-End Loss for Speaker Verification | See Original Repo |
 
 ## News
-**08/09/22**: Our team at Resemble.AI is releasing a voice conversion model (closed source), check out my demo [here](https://www.youtube.com/watch?v=f075EOzYKog). 
-
-**10/01/22**: I recommend checking out [CoquiTTS](https://github.com/coqui-ai/tts). It's a good and up-to-date TTS repository targeted for the ML community. It can also do voice cloning and more, such as cross-language cloning or voice conversion.
-
-**28/12/21**: I've done a [major maintenance update](https://github.com/CorentinJ/Real-Time-Voice-Cloning/pull/961). Mostly, I've worked on making setup easier. Find new instructions in the section below.
-
-**14/02/21**: This repo now runs on PyTorch instead of Tensorflow, thanks to the help of @bluefish.
-
-**13/11/19**: I'm now working full time and I will rarely maintain this repo anymore. To anyone who reads this:
-- **If you just want to clone your voice (and not someone else's):** I recommend our free plan on [Resemble.AI](https://www.resemble.ai/). You will get a better voice quality and less prosody errors.
-- **If this is not your case:** proceed with this repository, but you might end up being disappointed by the results. If you're planning to work on a serious project, my strong advice: find another TTS repo. Go [here](https://github.com/CorentinJ/Real-Time-Voice-Cloning/issues/364) for more info.
-
-**20/08/19:** I'm working on [resemblyzer](https://github.com/resemble-ai/Resemblyzer), an independent package for the voice encoder (inference only). You can use your trained encoder models from this repo with it.
-
+3/13/23 - Fork
 
 ## Setup
+Below is the installation which no longer works. I am keeping it here until it can be updated with more recent instructions.
 
 ### 1. Install Requirements
 1. Both Windows and Linux are supported. A GPU is recommended for training and for inference speed, but is not mandatory.
